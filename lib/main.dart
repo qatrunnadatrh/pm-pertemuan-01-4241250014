@@ -9,19 +9,44 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Tugas Rutin 1')),
-        body: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Hello World',
-                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
-              Text('Nama : Qatrunnada Athirah H'),
-              Text('NIM  : 4241250014'),
-              Text('Kelas: PSIK 24C'),
-            ],
-          ),
+      theme: ThemeData(colorSchemeSeed: Colors.blue, useMaterial3: true),
+      home: const HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  int _taps = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Tugas Rutin 1')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.phone_android, size: 64),
+            const SizedBox(height: 16),
+            const Text('Hello World',
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            const Text('Nama : Qatrunnada Athirah H'),
+            const Text('NIM  : 4241250014'),
+            const Text('Kelas: PSIK 24C'),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () => setState(() => _taps++),
+              child: Text('Tekan saya ($_taps)'),
+            ),
+          ],
         ),
       ),
     );
