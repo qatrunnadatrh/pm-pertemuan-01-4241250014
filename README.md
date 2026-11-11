@@ -1,17 +1,21 @@
-# pm_pertemuan_01
+# pm-pertemuan-01-<4241250014>
+Hello World Flutter oleh <QATRUNNADA ATHIRAH H> (4241250014), kelas PSIK 24C.
 
-A new Flutter project.
+## Versi Flutter
+[version](screenshot/version.png) 
 
-## Getting Started
+## screenshot
+- flutter doctor: ![doctor](screenshot/doctor.png)
+- aplikasi: ![app](screenshot/app.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Kendala & Solusi
+1. **Kendala:** Saat menjalankan aplikasi dengan F5 di VS Code muncul error `Unable to find suitable Visual Studio toolchain`, karena target default aplikasi adalah Windows desktop dan Visual Studio dengan workload C++ belum terpasang.
+   **Solusi:** Mengganti target perangkat ke Chrome, lalu menjalankan aplikasi dengan perintah `flutter run -d chrome`. --android-licenses`
+2. **Kendala:** Mengganti target perangkat ke Chrome, lalu menjalankan aplikasi dengan perintah `flutter run -d chrome`.
+   **Solusi:** Masuk ke folder proyek dengan `cd pm_pertemuan_01`, lalu menjalankan ulang perintahnya.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Pernyataan Penggunaan AI
+Saya menggunakan Claude untuk membantu menyusun kerangka kode,
+template README. Saya telah membaca, menjalankan, dan memahami
+seluruh kode serta menyesuaikan isinya sendiri.
